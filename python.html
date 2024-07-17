@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Basics to Intermediate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, mintcream, pink);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        h2 {
+            border-bottom: 2px solid #ff69b4;
+            padding-bottom: 0.5rem;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            color: #d14;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Python Basics to Intermediate</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Introduction to Python</h2>
+            <p>Python is a versatile programming language known for its simplicity and readability. It's widely used in web development, data analysis, artificial intelligence, scientific computing, and more.</p>
+        </section>
+        <section>
+            <h2>Variables and Data Types</h2>
+            <p>In Python, variables do not require explicit declaration to reserve memory space. The declaration happens automatically when you assign a value to a variable.</p>
+            <pre><code>name = "Alice"  # String
+age = 30       # Integer
+height = 5.5   # Float
+is_student = True  # Boolean</code></pre>
+        </section>
+        <section>
+            <h2>Control Structures</h2>
+            <p>Python supports various control structures such as conditional statements and loops to manage the flow of the program.</p>
+            <h3>Conditional Statements</h3>
+            <pre><code>if age > 18:
+    print("Adult")
+else:
+    print("Minor")</code></pre>
+            <h3>Loops</h3>
+            <pre><code>for i in range(5):
+    print(i)
+    
+while age < 35:
+    age += 1</code></pre>
+        </section>
+        <section>
+            <h2>Functions</h2>
+            <p>Functions are blocks of code that perform a specific task. They help in organizing code and avoiding repetition.</p>
+            <pre><code>def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("Alice"))</code></pre>
+        </section>
+        <section>
+            <h2>Popular Python Libraries</h2>
+            <h3>NumPy</h3>
+            <p>NumPy is a library for numerical computing. It provides support for arrays, matrices, and a large number of mathematical functions.</p>
+            <pre><code>import numpy as np
+
+arr = np.array([1, 2, 3, 4])
+print(arr)</code></pre>
+            <h3>Pandas</h3>
+            <p>Pandas is a library used for data manipulation and analysis. It provides data structures like DataFrame which are very powerful for data handling.</p>
+            <pre><code>import pandas as pd
+
+data = {'Name': ['Alice', 'Bob', 'Charlie'], 'Age': [25, 30, 35]}
+df = pd.DataFrame(data)
+print(df)</code></pre>
+            <h3>Matplotlib</h3>
+            <p>Matplotlib is a plotting library used for creating static, interactive, and animated visualizations in Python.</p>
+            <pre><code>import matplotlib.pyplot as plt
+
+x = [1, 2, 3, 4]
+y = [10, 20, 25, 30]
+plt.plot(x, y)
+plt.show()</code></pre>
+        </section>
+    </main>
+</body>
+</html>
